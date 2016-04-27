@@ -4,29 +4,40 @@
 body {
   background-color: #cbcbcb; }
 
-#wrapper {
-  margin-top: 3em; }
+@media screen and (min-width: 480px) {
+  #wrapper {
+    margin-top: 3em; } }
 
 .svg {
   display: inline-table;
   vertical-align: middle;
   width: 100%;
   margin: auto;
-  padding: 2em; }
+  padding: 2em;
+  transition: 1s all ease;
+  text-align: center; }
+  .svg object {
+    max-height: 300px;
+    max-width: 300px; }
   @media screen and (min-width: 480px) {
     .svg {
       width: 49%; }
       .svg object {
-        max-height: 240px; } }
+        max-height: 240px;
+        max-width: 240px; } }
   @media screen and (min-width: 768px) {
     .svg {
       width: 32%; }
       .svg object {
-        max-height: 256px; } }
+        max-height: 256px;
+        max-width: 256px; } }
   @media screen and (min-width: 1280px) {
     .svg {
       width: 24%; }
       .svg object {
-        max-height: 320px; } }
+        max-height: 320px;
+        max-width: 320px; } }
+  .svg:hover {
+    background-color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
