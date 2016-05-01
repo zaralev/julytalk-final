@@ -1,0 +1,64 @@
+@import "colors";
+$ease: ease-out;
+$time: 0.3s;
+$delay: 0.2s;
+/*     MIC      */
+#pink-spark {
+    // fill: $pink;
+    fill: $background;
+}
+#yellow-spark {
+    // fill: $yellow;
+    fill: $background;
+}
+#blue-spark {
+    // fill: $blue;
+    fill: $background;
+}
+@keyframes glow-big {
+    0% {
+        fill: $sound1;
+    }
+    50% {
+        fill: $sound;
+    }
+    100% {
+        fill: $sound1;
+    }
+}
+#mic {
+    cursor: pointer;
+    &:hover,
+    &active {
+        #large-sound {
+            animation-name: glow-big;
+            animation-delay: 1s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #medium-sound {
+            animation-name: glow-big;
+            animation-delay: 0.5s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #small-sound {
+            animation-name: glow-big;
+            animation-delay: 0s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+#large-sound {
+    // fill: $sound;
+    fill: $background;
+}
+#medium-sound {
+    // fill: $sound1;
+    fill: $background;
+}
+#small-sound {
+    // fill: $sound;
+    fill: $background;
+}

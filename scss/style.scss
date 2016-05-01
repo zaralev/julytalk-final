@@ -1,49 +1,59 @@
+@import "guitar";
+@import "mic";
+@import "colors";
+@import "mouth";
+
 * {
     box-sizing: border-box;
 }
 body {
-  background-color:#cbcbcb;
+    background-color: $background;
 }
 #wrapper {
-
-  @media screen and (min-width: 480px) {
-    margin-top:3em;
-  }
+    @media screen and (min-width: 480px) {
+        margin-top: 3em;
+    }
 }
 .svg {
     display: inline-table;
-        vertical-align: middle;
+    vertical-align: middle;
     width: 100%;
     margin: auto;
     padding: 2em;
-    transition: 1s all ease;
-    text-align:center;
+    // transition: 1s all ease;
+    text-align: center;
     object {
-      max-height:300px;
-      max-width: 300px;
+        max-height: 300px;
+        max-width: 300px;
     }
     @media screen and (min-width: 480px) {
         width: 49%;
         object {
             max-height: 240px;
             max-width: 240px;
+            .wide {
+                height: 240px;
+            }
         }
     }
     @media screen and (min-width: 768px) {
         width: 32%;
         object {
             max-height: 256px;
-              max-width: 256px;
+            max-width: 256px;
+            .wide {
+                height: 256px;
+            }
         }
     }
     @media screen and (min-width: 1280px) {
         width: 24%;
         object {
             max-height: 320px;
-              max-width: 320px;
+            max-width: 320px;
+            .wide {
+                height: 240px;
+            }
         }
-    }
-    &:hover {
-      background-color:#fff;
     }
 }

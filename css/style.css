@@ -1,3 +1,110 @@
+/*     GUITAR     */
+#guitarSVG {
+  cursor: pointer; }
+  #guitarSVG #body-thick {
+    fill: #3F3F3F; }
+  #guitarSVG #peg {
+    fill: #282828; }
+  #guitarSVG #guitar-body {
+    fill: #161616; }
+  #guitarSVG #guitar-cover {
+    fill: #333333; }
+  #guitarSVG #head-back {
+    fill: #444444;
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2s; }
+  #guitarSVG #arm-back {
+    fill: #757575;
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2s; }
+  #guitarSVG #arm {
+    fill: #8E8E8E;
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2s; }
+  #guitarSVG .st7 {
+    fill: #666666; }
+  #guitarSVG .st8 {
+    fill: #111111; }
+  #guitarSVG .st9 {
+    fill: #777777; }
+  #guitarSVG .st10 {
+    fill: #141414; }
+  #guitarSVG .st11 {
+    fill: #9B9B9B; }
+  #guitarSVG .st12 {
+    fill: #1C1C1C; }
+  #guitarSVG .st13 {
+    fill: #565656; }
+  #guitarSVG .st14 {
+    fill: #383838; }
+  #guitarSVG .st15 {
+    fill: #353535; }
+  #guitarSVG .st16 {
+    fill: #D6D6D6; }
+  #guitarSVG .st17 {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 0.3;
+    stroke-miterlimit: 10; }
+  #guitarSVG .st18 {
+    fill: #E5E5E5; }
+  #guitarSVG:hover #arm {
+    fill: #cbae59; }
+  #guitarSVG:hover #head-back {
+    fill: #795621; }
+  #guitarSVG:hover #arm-back {
+    fill: #9e8333; }
+
+/*     MIC      */
+#pink-spark {
+  fill: #cbcbcb; }
+
+#yellow-spark {
+  fill: #cbcbcb; }
+
+#blue-spark {
+  fill: #cbcbcb; }
+
+@keyframes glow-big {
+  0% {
+    fill: #f00; }
+  50% {
+    fill: #fff; }
+  100% {
+    fill: #f00; } }
+#mic {
+  cursor: pointer; }
+  #mic:hover #large-sound, #micactive #large-sound {
+    animation-name: glow-big;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
+  #mic:hover #medium-sound, #micactive #medium-sound {
+    animation-name: glow-big;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
+  #mic:hover #small-sound, #micactive #small-sound {
+    animation-name: glow-big;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
+
+#large-sound {
+  fill: #cbcbcb; }
+
+#medium-sound {
+  fill: #cbcbcb; }
+
+#small-sound {
+  fill: #cbcbcb; }
+
 * {
   box-sizing: border-box; }
 
@@ -14,7 +121,6 @@ body {
   width: 100%;
   margin: auto;
   padding: 2em;
-  transition: 1s all ease;
   text-align: center; }
   .svg object {
     max-height: 300px;
@@ -24,20 +130,24 @@ body {
       width: 49%; }
       .svg object {
         max-height: 240px;
-        max-width: 240px; } }
+        max-width: 240px; }
+        .svg object .wide {
+          height: 240px; } }
   @media screen and (min-width: 768px) {
     .svg {
       width: 32%; }
       .svg object {
         max-height: 256px;
-        max-width: 256px; } }
+        max-width: 256px; }
+        .svg object .wide {
+          height: 256px; } }
   @media screen and (min-width: 1280px) {
     .svg {
       width: 24%; }
       .svg object {
         max-height: 320px;
-        max-width: 320px; } }
-  .svg:hover {
-    background-color: #fff; }
+        max-width: 320px; }
+        .svg object .wide {
+          height: 240px; } }
 
 /*# sourceMappingURL=style.css.map */
