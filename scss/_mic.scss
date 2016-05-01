@@ -15,7 +15,7 @@ $delay: 0.2s;
     // fill: $blue;
     fill: $background;
 }
-@keyframes glow-big {
+@keyframes glow {
     0% {
         fill: $sound1;
     }
@@ -26,27 +26,53 @@ $delay: 0.2s;
         fill: $sound1;
     }
 }
+@keyframes spark {
+    0% {
+        fill: #f00;
+    }
+    100% {
+        fill: #fff;
+    }
+}
 #mic {
     cursor: pointer;
     &:hover,
     &active {
         #large-sound {
-            animation-name: glow-big;
+            animation-name: glow;
             animation-delay: 1s;
             animation-duration: 2s;
             animation-iteration-count: infinite;
         }
         #medium-sound {
-            animation-name: glow-big;
+            animation-name: glow;
             animation-delay: 0.5s;
             animation-duration: 2s;
             animation-iteration-count: infinite;
         }
         #small-sound {
-            animation-name: glow-big;
+            animation-name: glow;
             animation-delay: 0s;
             animation-duration: 2s;
             animation-iteration-count: infinite;
+        }
+        #yellow-spark {
+          animation-name: spark;
+          animation-delay: 0s;
+          animation-duration: 0.3s;
+          animation-iteration-count: infinite;
+        }
+        #blue-spark {
+          animation-name: spark;
+          animation-delay: 0s;
+          animation-duration: 0.3s;
+          animation-iteration-count: infinite;
+        }
+        #pink-spark {
+          animation-name: spark;
+          animation-delay: 0s;
+          animation-duration: 0.3s;
+          animation-iteration-count: infinite;
         }
     }
 }

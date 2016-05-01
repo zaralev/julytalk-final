@@ -71,29 +71,49 @@
 #blue-spark {
   fill: #cbcbcb; }
 
-@keyframes glow-big {
+@keyframes glow {
   0% {
     fill: #f00; }
   50% {
     fill: #fff; }
   100% {
     fill: #f00; } }
+@keyframes spark {
+  0% {
+    fill: #f00; }
+  100% {
+    fill: #fff; } }
 #mic {
   cursor: pointer; }
   #mic:hover #large-sound, #micactive #large-sound {
-    animation-name: glow-big;
+    animation-name: glow;
     animation-delay: 1s;
     animation-duration: 2s;
     animation-iteration-count: infinite; }
   #mic:hover #medium-sound, #micactive #medium-sound {
-    animation-name: glow-big;
+    animation-name: glow;
     animation-delay: 0.5s;
     animation-duration: 2s;
     animation-iteration-count: infinite; }
   #mic:hover #small-sound, #micactive #small-sound {
-    animation-name: glow-big;
+    animation-name: glow;
     animation-delay: 0s;
     animation-duration: 2s;
+    animation-iteration-count: infinite; }
+  #mic:hover #yellow-spark, #micactive #yellow-spark {
+    animation-name: spark;
+    animation-delay: 0s;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite; }
+  #mic:hover #blue-spark, #micactive #blue-spark {
+    animation-name: spark;
+    animation-delay: 0s;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite; }
+  #mic:hover #pink-spark, #micactive #pink-spark {
+    animation-name: spark;
+    animation-delay: 0s;
+    animation-duration: 0.3s;
     animation-iteration-count: infinite; }
 
 #large-sound {
@@ -104,6 +124,81 @@
 
 #small-sound {
   fill: #cbcbcb; }
+
+#mouth .st0 {
+  fill: #1C1C1C;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s; }
+#mouth .st1 {
+  fill: #161616;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s; }
+#mouth .st2 {
+  fill: #B5B5B5;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s; }
+#mouth .st3 {
+  fill: #D1D1D1;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s; }
+#mouth .st4 {
+  fill: #494949;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s; }
+#mouth .st5 {
+  fill: #333333;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s; }
+#mouth .st6 {
+  fill: #282828;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s; }
+#mouth .st7 {
+  fill: #5B5B5B;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s; }
+#mouth .st8 {
+  fill: #828282;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s; }
+#mouth:hover {
+  cursor: pointer; }
+  #mouth:hover .st0 {
+    fill: #381419; }
+  #mouth:hover .st1 {
+    fill: #1f0d0f; }
+  #mouth:hover .st2 {
+    fill: #B5B5B5; }
+  #mouth:hover .st3 {
+    fill: #D1D1D1; }
+  #mouth:hover .st4 {
+    fill: #570d0d; }
+  #mouth:hover .st5 {
+    fill: #3e0707; }
+  #mouth:hover .st6 {
+    fill: #4d1c23; }
+  #mouth:hover .st7 {
+    fill: #782020; }
+  #mouth:hover .st8 {
+    fill: #a43434; }
 
 * {
   box-sizing: border-box; }

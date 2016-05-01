@@ -2,3 +2,98 @@
 $ease: ease-out;
 $time: 0.3s;
 $delay: 0.2s;
+#mouth {
+    .st0 {
+        fill: #1C1C1C; // tongue
+        transition-property: fill;
+        transition-duration: $time;
+        transition-timing-function: $ease;
+        transition-delay: $delay;
+    }
+    .st1 {
+        fill: #161616; // shadow tongue
+        transition-property: fill;
+        transition-duration: $time;
+        transition-timing-function: $ease;
+        transition-delay: $delay;
+    }
+    .st2 {
+        fill: #B5B5B5; //teeth
+        transition-property: fill;
+        transition-duration: $time;
+        transition-timing-function: $ease;
+        transition-delay: $delay;
+    }
+    .st3 {
+        fill: #D1D1D1; // teeth highlight
+        transition-property: fill;
+        transition-duration: $time;
+        transition-timing-function: $ease;
+        transition-delay: $delay;
+    }
+    .st4 {
+        fill: #494949; // main lip
+        transition-property: fill;
+        transition-duration: $time;
+        transition-timing-function: $ease;
+        transition-delay: $delay;
+    }
+    .st5 {
+        fill: #333333; // dark lip
+        transition-property: fill;
+        transition-duration: $time;
+        transition-timing-function: $ease;
+        transition-delay: $delay;
+    }
+    .st6 {
+        fill: #282828; // tongue highlight
+        transition-property: fill;
+        transition-duration: $time;
+        transition-timing-function: $ease;
+        transition-delay: $delay;
+    }
+    .st7 {
+        fill: #5B5B5B; // lip highlight
+        transition-property: fill;
+        transition-duration: $time;
+        transition-timing-function: $ease;
+        transition-delay: $delay;
+    }
+    .st8 {
+        fill: #828282; // lip small highlights
+        transition-property: fill;
+        transition-duration: $time;
+        transition-timing-function: $ease;
+        transition-delay: $delay;
+    }
+    &:hover {
+        cursor: pointer;
+        .st0 {
+            fill: #381419; // tongue
+        }
+        .st1 {
+            fill: #1f0d0f; // shadow tongue
+        }
+        .st2 {
+            fill: #B5B5B5; //teeth
+        }
+        .st3 {
+            fill: #D1D1D1; // teeth highlight
+        }
+        .st4 {
+            fill: #570d0d; // main lip
+        }
+        .st5 {
+            fill: #3e0707; // dark lip
+        }
+        .st6 {
+            fill: #4d1c23; // tongue highlight
+        }
+        .st7 {
+            fill: #782020; // lip highlight
+        }
+        .st8 {
+            fill: #a43434; // lip small highlights
+        }
+    }
+}
