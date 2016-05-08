@@ -684,12 +684,23 @@ body {
 #mobile .links {
   background-color: #000;
   margin-top: -0.5em;
-  padding: 1em;
+  padding: 0.7em;
   text-align: center; }
   #mobile .links ul {
     display: inline-table;
     list-style-type: none;
     vertical-align: middle; }
+    #mobile .links ul li {
+      display: block;
+      cursor: pointer; }
+      #mobile .links ul li img {
+        width: 38px;
+        height: 38px;
+        margin: 0.2em; }
+        #mobile .links ul li img:active, #mobile .links ul li img:focus, #mobile .links ul li img:hover {
+          box-shadow: 0 0 10px 3px #003a91;
+          border: none;
+          border-color: transparent; }
 #mobile .website {
   background-color: #e30000;
   border: none;
@@ -698,6 +709,12 @@ body {
   padding: 0.5em;
   font-size: 2.5em;
   border-radius: 0.3em;
-  display: inline-table; }
+  margin-right: -1em;
+  display: inline-table;
+  vertical-align: middle; }
+  #mobile .website:active, #mobile .website:focus, #mobile .website:hover {
+    box-shadow: 0 0 10px 3px #6b0000;
+    border: none;
+    border-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */

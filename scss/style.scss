@@ -95,7 +95,6 @@ body {
         margin-right: 0.5em;
         vertical-align: super;
     }
-
     .toggle {
         position: absolute;
         margin-top: 2em;
@@ -115,23 +114,48 @@ body {
     .links {
         background-color: #000;
         margin-top: -0.5em;
-        padding: 1em;
+        padding: 0.7em;
         text-align: center;
         ul {
-          display:inline-table;
-          list-style-type: none;
-          vertical-align: middle;
+            display: inline-table;
+            list-style-type: none;
+            vertical-align: middle;
+            li {
+                display: block;
+                cursor: pointer;
+                img {
+                    width: 38px;
+                    height: 38px;
+                    margin: 0.2em;
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        box-shadow: 0 0 10px 3px #003a91;
+                        border: none;
+                        border-color: transparent;
+                    }
+                }
+            }
         }
     }
     .website {
-      background-color: #e30000;
-      border:none;
-      font-family: $heading;
-      color: #fff;
-      padding: 0.5em;
-      font-size: 2.5em;
-      border-radius: 0.3em;
-      display:inline-table;
+        background-color: #e30000;
+        border: none;
+        font-family: $heading;
+        color: #fff;
+        padding: 0.5em;
+        font-size: 2.5em;
+        border-radius: 0.3em;
+        margin-right: -1em;
+        display: inline-table;
+        vertical-align: middle;
+        &:active,
+        &:focus,
+        &:hover {
+            box-shadow: 0 0 10px 3px #6b0000;
+            border: none;
+            border-color: transparent;
+        }
     }
 }
 //MOBILE
