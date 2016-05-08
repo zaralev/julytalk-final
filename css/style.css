@@ -685,38 +685,44 @@ body {
   background-color: #000;
   margin-top: -0.5em;
   padding: 0.7em;
-  text-align: center; }
-  #mobile .links ul {
+  text-align: center;
+  width: 100%; }
+  #mobile .links div {
+    padding: 0.2em; }
+  #mobile .links .website {
     display: inline-table;
-    list-style-type: none;
     vertical-align: middle; }
-    #mobile .links ul li {
-      display: block;
-      cursor: pointer; }
-      #mobile .links ul li img {
-        width: 36px;
-        height: 36px;
-        margin: -0.1em;
-        padding: 0; }
-        #mobile .links ul li img:active, #mobile .links ul li img:focus, #mobile .links ul li img:hover {
-          box-shadow: 0 0 10px 3px #003a91;
-          border: none;
-          border-color: transparent; }
-#mobile .website {
-  background-color: #e30000;
-  border: none;
-  font-family: "Code Bold";
-  color: #fff;
-  height: 80px;
-  padding: 0.5em;
-  font-size: 2.5em;
-  border-radius: 0.3em;
-  margin-right: -1em;
-  display: inline-table;
-  vertical-align: middle; }
-  #mobile .website:active, #mobile .website:focus, #mobile .website:hover {
-    box-shadow: 0 0 10px 3px #880000;
-    border: none;
-    border-color: transparent; }
+    #mobile .links .website img {
+      cursor: pointer;
+      height: 45px;
+      padding: 0; }
+      #mobile .links .website img:active, #mobile .links .website img:focus, #mobile .links .website img:hover {
+        box-shadow: 0 0 10px 3px #880000;
+        border: none;
+        border-color: transparent; }
+  #mobile .links .twitter {
+    display: inline-table;
+    vertical-align: middle; }
+    #mobile .links .twitter img {
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+      padding: 0; }
+      #mobile .links .twitter img:active, #mobile .links .twitter img:focus, #mobile .links .twitter img:hover {
+        box-shadow: 0 0 10px 3px #006a91;
+        border: none;
+        border-color: transparent; }
+  #mobile .links .facebook {
+    display: inline-table;
+    vertical-align: middle; }
+    #mobile .links .facebook img {
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+      padding: 0; }
+      #mobile .links .facebook img:active, #mobile .links .facebook img:focus, #mobile .links .facebook img:hover {
+        box-shadow: 0 0 10px 3px #003a91;
+        border: none;
+        border-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
