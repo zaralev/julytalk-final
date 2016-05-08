@@ -88,3 +88,43 @@ $delay: 0.2s;
     // fill: $sound;
     fill: $background;
 }
+
+
+// PLAYING SOUND //
+// for #mic //
+.large-sound {
+      animation-name: glow;
+      animation-delay: 1s;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+  }
+.medium-sound {
+      animation-name: glow;
+      animation-delay: 0.5s;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+  }
+.small-sound {
+      animation-name: glow;
+      animation-delay: 0s;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+  }
+.yellow-spark {
+    animation-name: spark;
+    animation-delay: 0s;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+  }
+.blue-spark {
+    animation-name: spark;
+    animation-delay: 0s;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+  }
+.pink-spark {
+    animation-name: spark;
+    animation-delay: 0s;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+  }

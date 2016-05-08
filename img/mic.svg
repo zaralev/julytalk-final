@@ -1,6 +1,17 @@
 <?xml-stylesheet type="text/css" href="../css/style.css"?>
 
-<svg id="mic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.81 305.98">
+<svg id="mic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.81 305.98" onmouseup="svgFlameUp('Hello World')">
+    <style type="text/css" media="screen">
+        <![CDATA[
+
+        ]]>
+    </style>
+    <script type="text/ecmascript">
+        var svgFlameUp = function (msg) {
+            <!-- alert(msg); -->
+            <!-- window.open('http://www.disney.com/'); -->
+        }
+    </script>
     <title>mic</title>
     <path id="cord-2" data-name="cord" d="M38.73,128.67s-24.53,39.2-21.36,71.52S36,267.47,29.64,288.66,2.74,328,2.74,328" transform="translate(-2.07 -22.81)" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px"/>
     <path id="handle" d="M91.76,43.07L90.54,74.3s-47.71,58.48-50.42,59.59-6.67-3.17-6.07-6.06S78.41,65.92,78.41,65.92Z" transform="translate(-2.07 -22.81)" style="fill:#474747"/><path id="connector" d="M80.9,60.35s-5.89,4.39,0,11.58,11.83,2.92,11.83,2.92Z" transform="translate(-2.07 -22.81)" style="fill:#5b5b5b"/><ellipse id="mice" cx="95.47" cy="58.04" rx="17.07" ry="15.77" transform="translate(-8.81 80.37) rotate(-55.12)" style="fill:#282828"/>

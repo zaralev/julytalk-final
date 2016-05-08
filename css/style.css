@@ -125,6 +125,43 @@
 #small-sound {
   fill: #fff; }
 
+.large-sound {
+  animation-name: glow;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.medium-sound {
+  animation-name: glow;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.small-sound {
+  animation-name: glow;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.yellow-spark {
+  animation-name: spark;
+  animation-delay: 0s;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite; }
+
+.blue-spark {
+  animation-name: spark;
+  animation-delay: 0s;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite; }
+
+.pink-spark {
+  animation-name: spark;
+  animation-delay: 0s;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite; }
+
+/* MOUTH */
 #mouth .st0 {
   fill: #1C1C1C;
   transition-property: fill;
@@ -200,6 +237,7 @@
   #mouth:hover .st8 {
     fill: #a43434; }
 
+/* TICKET */
 #ticket-stub .st0 {
   fill: #FFFFFF;
   stroke: #000000;
@@ -626,7 +664,7 @@ body {
     margin: 1em auto -1em;
     max-width: 280px; }
 #mobile #may13 {
-  padding: 5.2em 0 0.7em; }
+  padding: 6.2em 0 0.7em; }
 #mobile #may14 {
   padding: 0.7em 0 1.2em; }
 #mobile .location {
@@ -657,7 +695,7 @@ body {
 #mobile .ticket {
   width: 100%;
   margin: auto;
-  padding: 1.5em; }
+  padding: 0em; }
 #mobile .mic {
   width: 45%;
   display: inline-table;
@@ -710,18 +748,6 @@ body {
       padding: 0; }
       #mobile .links .twitter img:active, #mobile .links .twitter img:focus, #mobile .links .twitter img:hover {
         box-shadow: 0 0 10px 3px #006a91;
-        border: none;
-        border-color: transparent; }
-  #mobile .links .facebook {
-    display: inline-table;
-    vertical-align: middle; }
-    #mobile .links .facebook img {
-      cursor: pointer;
-      width: 48px;
-      height: 48px;
-      padding: 0; }
-      #mobile .links .facebook img:active, #mobile .links .facebook img:focus, #mobile .links .facebook img:hover {
-        box-shadow: 0 0 10px 3px #003a91;
         border: none;
         border-color: transparent; }
 
