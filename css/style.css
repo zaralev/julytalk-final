@@ -667,10 +667,6 @@ body {
   display: inline-table;
   margin-right: 0.5em;
   vertical-align: super; }
-#mobile .links {
-  background-color: #000;
-  height: 4em;
-  margin-top: -0.5em; }
 #mobile .toggle {
   position: absolute;
   margin-top: 2em;
@@ -685,5 +681,23 @@ body {
   transform: rotate(-55deg); }
   #mobile .toggle span {
     cursor: pointer; }
+#mobile .links {
+  background-color: #000;
+  margin-top: -0.5em;
+  padding: 1em;
+  text-align: center; }
+  #mobile .links ul {
+    display: inline-table;
+    list-style-type: none;
+    vertical-align: middle; }
+#mobile .website {
+  background-color: #e30000;
+  border: none;
+  font-family: "Code Bold";
+  color: #fff;
+  padding: 0.5em;
+  font-size: 2.5em;
+  border-radius: 0.3em;
+  display: inline-table; }
 
 /*# sourceMappingURL=style.css.map */
