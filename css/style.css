@@ -696,7 +696,7 @@ body {
       #mobile .links ul li img {
         width: 38px;
         height: 38px;
-        margin: 0.2em; }
+        margin: 3px; }
         #mobile .links ul li img:active, #mobile .links ul li img:focus, #mobile .links ul li img:hover {
           box-shadow: 0 0 10px 3px #003a91;
           border: none;
