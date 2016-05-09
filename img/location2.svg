@@ -4,7 +4,7 @@
 
 	<style type="text/css" media="screen">
 		<![CDATA[
-		a,#Capa_2 {
+		#Capa_2 {
 			cursor: pointer;
 			fill: #000;
 		}

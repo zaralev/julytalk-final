@@ -681,6 +681,12 @@ body {
       margin-top: 0.2em;
       position: absolute;
       right: 14%; }
+      #mobile .location .row div.place a, #mobile .location .row div.place a:active, #mobile .location .row div.place a:visited {
+        text-decoration: none;
+        color: #000; }
+      #mobile .location .row div.place a:hover {
+        color: #f00;
+        text-decoration: underline; }
     #mobile .location .row div.locator {
       width: 1.2em;
       height: 1.2em;

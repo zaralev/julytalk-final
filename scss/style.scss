@@ -59,6 +59,14 @@ body {
                     margin-top: 0.2em;
                     position: absolute;
                     right: 14%;
+                    a,a:active,a:visited {
+                      text-decoration:none;
+                      color:#000;
+                    }
+                    a:hover {
+                      color: #f00;
+                      text-decoration: underline;
+                    }
                 }
                 &.locator {
                     width: 1.2em;
