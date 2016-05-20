@@ -1,9 +1,5 @@
 $(document).ready(function() {
-    // $('.toggle').click(function() {
-    //     $(this).css('display', 'none');
-    //     console.log('audio should trigger once toggle sound disappears');
-    //     console.log('guitar should be colorful and animation wiggle');
-    // });
+    // ALL SOUND/COLOR/ANIM
     var sndPlaying = false;
     var audioPlayerObj = document.getElementById("audioplayer");
     $('.microphone1, .guitar-change').click(function() {
@@ -26,10 +22,31 @@ $(document).ready(function() {
 
     });
 
-    // $('#microphone1').click(function() {
-    //     $(this).attr("src", "img/mic_anim.gif")
-    //     console.log('audio should trigger once toggle sound disappears');
-    //     console.log('guitar should be colorful and animation wiggle');
-    // });
+    // LOCATION COLOR
+    $('.locator, .place').mouseover(function() {
+        $(".location-icon").attr('src', 'img/locationred.png');
+        $(".webster-hall").css('color', '#f00');
+        $(".webster-hall").css('text-decoration', 'underline');
+    });
+    $('.locator, .place').mouseout(function() {
+        $(".location-icon").attr('src', 'img/location.png');
+        $(".webster-hall").css('color', '#000');
+        $(".webster-hall").css('text-decoration', 'none');
+    });
+
+    // WEBSITE AND TWITTER HOVER
+    $('.website').mouseover(function() {
+        $(this).addClass("button-wiggle");
+    });
+    $('.website').mouseout(function() {
+        $(this).removeClass("button-wiggle");
+    });
+
+    $('.twitter').mouseover(function() {
+        $(this).addClass("button-wiggle");
+    });
+    $('.twitter').mouseout(function() {
+        $(this).removeClass("button-wiggle");
+    });
 
 });

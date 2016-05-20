@@ -78,6 +78,9 @@ $desktop: 1024px; // MOBILE
                     height: 2em;
                     margin-top: 0.5em;
                     position: absolute;
+                    img {
+                      max-width:60%;
+                    }
                 }
             }
         }
