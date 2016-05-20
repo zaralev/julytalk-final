@@ -1,0 +1,75 @@
+// TABLET
+#tablet {
+    display: none;
+    @media screen and (min-width:768px) {
+        display: block;
+    }
+    .header {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background-color: #fff;
+        text-align: left;
+        img {
+            margin: 1em 1em -0.8em 2em;
+            max-width: 280px;
+        }
+    }
+    .band {
+        position: relative;
+        top: 88px;
+        img {
+            max-width: 100%;
+        }
+    }
+    .location {
+        position: fixed;
+        z-index: 3;
+        top: 1em;
+        right: 2em;
+        padding: 0;
+        margin: 0;
+        .row {
+            // background-color: #efa;
+            width: 24em;
+            div {
+                display: inline-block;
+                &.date {
+                    font-family: $heading;
+                    font-size: 1.5em;
+                    text-align: left;
+                }
+                &.place {
+                    padding: 0.6em 1em 0.3em;
+                    vertical-align: top;
+                    text-align: right;
+                    width: 70%;
+                    font-size: 1.3em;
+                    // background-color: #caa;
+                    a,
+                    a:active,
+                    a:visited {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                    a:hover {
+                        color: #f00;
+                        text-decoration: underline;
+                    }
+                }
+                &.locator {
+                    width: 2em;
+                    height: 2em;
+                    margin-top: 0.4em;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+//TABLET
