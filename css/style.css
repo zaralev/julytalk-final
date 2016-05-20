@@ -1375,34 +1375,37 @@ table {
 #mobile #jun3 {
   padding: 6.2em 0 1em; }
 #mobile .location {
-  text-align: left;
-  margin-top: 0.4em; }
-  #mobile .location .row div {
-    vertical-align: middle;
-    display: inline-table; }
-    #mobile .location .row div.date {
-      font-family: "Code Bold";
-      font-size: 1.3em;
-      margin-left: 5%;
-      text-align: left; }
-    #mobile .location .row div.place {
-      margin-top: 1em;
-      position: absolute;
-      right: 14%; }
-      #mobile .location .row div.place a,
-      #mobile .location .row div.place a:active,
-      #mobile .location .row div.place a:visited {
-        text-decoration: none;
-        color: #000; }
-      #mobile .location .row div.place a:hover {
-        color: #f00;
-        text-decoration: underline; }
-    #mobile .location .row div.locator {
-      margin-top: 0.8em;
-      width: 1.2em;
-      height: 1.2em;
-      position: absolute;
-      right: 5%; }
+  text-align: center;
+  padding: 0;
+  margin-top: 0.4em auto; }
+  #mobile .location .row {
+    margin: auto;
+    width: 80%; }
+    #mobile .location .row div {
+      display: inline-block; }
+      #mobile .location .row div.date {
+        font-family: "Code Bold";
+        font-size: 1.5em;
+        text-align: left; }
+      #mobile .location .row div.place {
+        padding: 0.7em 1em 0.3em;
+        vertical-align: top;
+        text-align: right;
+        width: 70%;
+        font-size: 1.3em; }
+        #mobile .location .row div.place a,
+        #mobile .location .row div.place a:active,
+        #mobile .location .row div.place a:visited {
+          text-decoration: none;
+          color: #000; }
+        #mobile .location .row div.place a:hover {
+          color: #f00;
+          text-decoration: underline; }
+      #mobile .location .row div.locator {
+        width: 2em;
+        height: 2em;
+        margin-top: 0.5em;
+        position: absolute; }
 #mobile hr {
   border: none;
   height: 0.15em;
@@ -1410,9 +1413,13 @@ table {
 #mobile .mobile-image img {
   max-width: 100%; }
 #mobile .ticket {
-  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
   margin: auto;
   padding: 0; }
+#mobile .sound {
+  width: 80%;
+  margin: auto; }
 #mobile .mic {
   width: 45%;
   display: inline-table;
@@ -1460,7 +1467,6 @@ table {
       height: 48px;
       padding: 0; }
       #mobile .links .website img:active, #mobile .links .website img:focus, #mobile .links .website img:hover {
-        box-shadow: 0 0 10px 3px #880000;
         border: none;
         border-color: transparent; }
   #mobile .links .twitter {
@@ -1472,7 +1478,6 @@ table {
       height: 48px;
       padding: 0; }
       #mobile .links .twitter img:active, #mobile .links .twitter img:focus, #mobile .links .twitter img:hover {
-        box-shadow: 0 0 10px 3px #006a91;
         border: none;
         border-color: transparent; }
 
@@ -1576,7 +1581,6 @@ table {
           height: 48px;
           padding: 0; }
           #tablet .column .links .website img:active, #tablet .column .links .website img:focus, #tablet .column .links .website img:hover {
-            box-shadow: 0 0 10px 3px #880000;
             border: none;
             border-color: transparent; }
       #tablet .column .links .twitter {
@@ -1588,7 +1592,6 @@ table {
           height: 48px;
           padding: 0; }
           #tablet .column .links .twitter img:active, #tablet .column .links .twitter img:focus, #tablet .column .links .twitter img:hover {
-            box-shadow: 0 0 10px 3px #006a91;
             border: none;
             border-color: transparent; }
 
