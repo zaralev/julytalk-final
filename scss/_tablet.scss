@@ -5,7 +5,8 @@
         display: block;
     }
     .header {
-        position: fixed;
+      // position: fixed;
+      position: absolute;
         z-index: 2;
         top: 0;
         left: 0;
@@ -22,13 +23,14 @@
     }
     .band {
         position: relative;
-        top: 88px;
+        top: 70px;
         img {
             max-width: 100%;
         }
     }
     .location {
-        position: fixed;
+        // position: fixed;
+        position: absolute;
         z-index: 3;
         top: 1em;
         right: 2em;
@@ -45,7 +47,7 @@
                     text-align: left;
                 }
                 &.place {
-                    padding: 0.6em 1em 0.3em;
+                    padding: 0.7em 1em 0.3em;
                     vertical-align: top;
                     text-align: right;
                     width: 70%;
@@ -65,7 +67,7 @@
                 &.locator {
                     width: 2em;
                     height: 2em;
-                    margin-top: 0.4em;
+                    margin-top: 0.5em;
                     position: absolute;
                 }
             }

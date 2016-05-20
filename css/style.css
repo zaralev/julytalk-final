@@ -1409,7 +1409,7 @@ table {
     #tablet {
       display: block; } }
   #tablet .header {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     top: 0;
     left: 0;
@@ -1424,11 +1424,11 @@ table {
       max-width: 280px; }
   #tablet .band {
     position: relative;
-    top: 88px; }
+    top: 70px; }
     #tablet .band img {
       max-width: 100%; }
   #tablet .location {
-    position: fixed;
+    position: absolute;
     z-index: 3;
     top: 1em;
     right: 2em;
@@ -1443,7 +1443,7 @@ table {
           font-size: 1.5em;
           text-align: left; }
         #tablet .location .row div.place {
-          padding: 0.6em 1em 0.3em;
+          padding: 0.7em 1em 0.3em;
           vertical-align: top;
           text-align: right;
           width: 70%;
@@ -1459,7 +1459,7 @@ table {
         #tablet .location .row div.locator {
           width: 2em;
           height: 2em;
-          margin-top: 0.4em;
+          margin-top: 0.5em;
           position: absolute; }
 
 /*# sourceMappingURL=style.css.map */
