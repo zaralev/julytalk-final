@@ -5,8 +5,8 @@
         display: block;
     }
     .header {
-      // position: fixed;
-      position: absolute;
+        // position: fixed;
+        position: absolute;
         z-index: 2;
         top: 0;
         left: 0;
@@ -69,6 +69,82 @@
                     height: 2em;
                     margin-top: 0.5em;
                     position: absolute;
+                }
+            }
+        }
+    }
+    .sound {
+        margin-top: 80px;
+        .mic {
+            width: 30%;
+            display: inline-table;
+            vertical-align: baseline;
+            img {
+                max-width: 100%;
+                cursor: pointer;
+                margin-bottom: -1em;
+            }
+        }
+        .guitar {
+            width: 35%;
+            display: inline-table;
+            margin-left: -3em;
+            vertical-align: super;
+            img {
+                max-width: 100%;
+                cursor: pointer;
+                margin-bottom: 15px;
+                -webkit-transform: rotate(-7deg);
+                transform: rotate(-7deg);
+            }
+        }
+    }
+    .column {
+      padding-top:120px;
+        display: inline-table;
+        width: 40%;
+        vertical-align: top;
+        .ticket {
+            width: 100%;
+        }
+        .links {
+          margin-top:2em;
+            text-align: center;
+            width: 100%;
+            div {
+                padding: 0.2em;
+            }
+            .website {
+                display: inline-table;
+                vertical-align: middle;
+                img {
+                    cursor: pointer;
+                    height: 48px;
+                    padding: 0;
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        box-shadow: 0 0 10px 3px #880000;
+                        border: none;
+                        border-color: transparent;
+                    }
+                }
+            }
+            .twitter {
+                display: inline-table;
+                vertical-align: middle;
+                img {
+                    cursor: pointer;
+                    width: 48px;
+                    height: 48px;
+                    padding: 0;
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        box-shadow: 0 0 10px 3px #006a91;
+                        border: none;
+                        border-color: transparent;
+                    }
                 }
             }
         }

@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <audio id="audioplayer" src="audio/julytalk.mp3">
+        <!-- controls="true" autoplay -->
+        Your browser does not support HTML5 audio. I suggest you download Google Chrome or Mozilla Firefox.
+    </audio>
     <!-- mobile -->
     <div id="mobile">
         <div class="mobile-header">
@@ -21,7 +25,8 @@
         <div id="jun3" class="location">
             <div class="row">
                 <div class="date">
-                    June 3<br>
+                    June 3
+                    <br>
                     <span style="color:#f00;">7:00pm</span>
                 </div>
                 <div class="place">
@@ -59,18 +64,20 @@
             </object>
         </div>
         <div class="sound">
-            <div class="toggle">
+            <!-- <div class="toggle">
                 <span>toggle<br>sound</span>
-            </div>
+            </div> -->
             <div class="mic">
-                <object data="img/mic.svg" type="image/svg+xml">
+                <img class="microphone1" src="img/mictext.png" alt="Microphone" />
+                <!-- <object data="img/mic.svg" type="image/svg+xml">
                     <img src="img/mic.png" alt="location" />
-                </object>
+                </object> -->
             </div>
             <div class="guitar">
-                <object data="img/guitar.svg" type="image/svg+xml">
-                    <img src="img/guitar.png" alt="location" />
-                </object>
+                <!-- <object data="img/guitar.svg" type="image/svg+xml">
+                        <img src="img/guitar.png" alt="location" />
+                    </object> -->
+                <img class="guitar-change guitar1" src="img/guitar.png" alt="Guitar" />
             </div>
         </div>
         <div class="links">
@@ -91,8 +98,9 @@
         <div class="location">
             <div class="row">
                 <div class="date">
-                  June 3<br>
-                  <span style="color:#f00;">7:00pm</span>
+                    June 3
+                    <br>
+                    <span style="color:#f00;">7:00pm</span>
                 </div>
                 <div class="place">
                     <a href="http://www.centennialpark.com/" target="_blank">Webster Hall</a>
@@ -107,6 +115,30 @@
         <div class="band">
             <img src="img/tablet.png" alt="band" />
         </div>
+        <div class="sound">
+            <div class="mic">
+                <img class="microphone1" src="img/mictext.png" alt="Microphone" />
+            </div>
+            <div class="guitar">
+                <img class="guitar-change guitar2" src="img/guitar.png" alt="Guitar" />
+            </div>
+            <div class="column">
+                <div class="ticket">
+                    <object data="img/ticket.svg" type="image/svg+xml">
+                        <img src="img/ticket.png" alt="location" />
+                    </object>
+                </div>
+                <div class="links">
+                    <div class="website">
+                        <a href="http://www.julytalk.com/" target="_blank"><img src="img/website.png" alt="Website" /></a>
+                    </div>
+                    <div class="twitter">
+                        <a href="https://twitter.com/julytalk" target="_blank"><img src="img/twitter.png" alt="Twitter" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- tablet -->
 </body>

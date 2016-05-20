@@ -1,0 +1,80 @@
+.wiggle {
+    animation: wiggle linear 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%; /*--  x%, y% ; --*/
+    -webkit-animation: wiggle linear 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-transform-origin: 50% 0%;
+}
+@keyframes wiggle {
+    0% {
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+        transform: rotate(0deg) scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(deg);
+    }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+      left: 0px;
+      top: 0px;
+      opacity: 1;
+      transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+  50% {
+      transform: rotate(-10deg);
+  }
+  100% {
+      transform: rotate(deg);
+  }
+}
+
+
+.wiggle2 {
+    animation: wiggle2 linear 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%; /*--  x%, y% ; --*/
+    -webkit-animation: wiggle2 linear 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-transform-origin: 50% 0%;
+}
+@keyframes wiggle2 {
+    0% {
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+        transform: rotate(-7deg) scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-7deg);
+    }
+}
+
+@-webkit-keyframes wiggle2 {
+  0% {
+      left: 0px;
+      top: 0px;
+      opacity: 1;
+      transform: rotate(-7deg) scaleX(1) scaleY(1);
+  }
+  50% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(-7deg);
+  }
+}

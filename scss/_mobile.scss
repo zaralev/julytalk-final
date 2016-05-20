@@ -11,13 +11,11 @@ $body: 'Avenir Book';
 $button: 'Avenir Medium';
 $mobile: 320px;
 $tablet: 768px;
-$desktop: 1024px;
-
-// MOBILE
+$desktop: 1024px; // MOBILE
 #mobile {
-  @media screen and (min-width:768px) {
-    display:none;
-  }
+    @media screen and (min-width:768px) {
+        display: none;
+    }
     .mobile-header {
         position: absolute;
         top: 0;
@@ -35,13 +33,14 @@ $desktop: 1024px;
     }
     #jun3 {
         // padding: 6.2em 0 0.7em;
-          padding: 6.2em 0 1em;
+        padding: 6.2em 0 1em;
     }
     // #may14 {
     //     padding: 0.7em 0 1.2em;
     // }
     .location {
         text-align: left;
+        margin-top: 0.4em;
         .row {
             div {
                 vertical-align: middle;
@@ -56,13 +55,15 @@ $desktop: 1024px;
                     margin-top: 1em;
                     position: absolute;
                     right: 14%;
-                    a,a:active,a:visited {
-                      text-decoration:none;
-                      color:#000;
+                    a,
+                    a:active,
+                    a:visited {
+                        text-decoration: none;
+                        color: #000;
                     }
                     a:hover {
-                      color: #f00;
-                      text-decoration: underline;
+                        color: #f00;
+                        text-decoration: underline;
                     }
                 }
                 &.locator {
@@ -88,18 +89,28 @@ $desktop: 1024px;
     .ticket {
         width: 100%;
         margin: auto;
-        padding: 0em;
+        padding: 0;
     }
     .mic {
         width: 45%;
         display: inline-table;
         vertical-align: baseline;
+        margin-bottom: 0.1em;
+        img {
+            max-width: 100%;
+            cursor: pointer;
+        }
     }
     .guitar {
         width: 50%;
         display: inline-table;
         margin-right: 0.5em;
         vertical-align: super;
+        img {
+            max-width: 100%;
+            cursor: pointer;
+            margin-bottom: 50px;
+        }
     }
     .toggle {
         position: absolute;
