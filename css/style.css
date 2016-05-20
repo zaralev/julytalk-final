@@ -661,12 +661,10 @@ body {
   background-color: #000;
   text-align: center; }
   #mobile .mobile-header img {
-    margin: 1em auto -1em;
+    margin: 1em auto -0.8em;
     max-width: 280px; }
-#mobile #may13 {
-  padding: 6.2em 0 0.7em; }
-#mobile #may14 {
-  padding: 0.7em 0 1.2em; }
+#mobile #jun3 {
+  padding: 6.2em 0 1em; }
 #mobile .location {
   text-align: left; }
   #mobile .location .row div {

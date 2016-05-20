@@ -33,16 +33,17 @@ body {
         background-color: #000;
         text-align: center;
         img {
-            margin: 1em auto -1em;
+            margin: 1em auto -0.8em;
             max-width: 280px;
         }
     }
-    #may13 {
-        padding: 6.2em 0 0.7em;
+    #jun3 {
+        // padding: 6.2em 0 0.7em;
+          padding: 6.2em 0 1em;
     }
-    #may14 {
-        padding: 0.7em 0 1.2em;
-    }
+    // #may14 {
+    //     padding: 0.7em 0 1.2em;
+    // }
     .location {
         text-align: left;
         .row {
