@@ -1,7 +1,7 @@
 // TABLET
 #tablet {
     display: none;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1023px) {
         display: block;
     }
     .header {
@@ -103,9 +103,9 @@
         }
     }
     .column {
-      padding-top:120px;
+      padding-top:8em;
         display: inline-table;
-        width: 40%;
+        width:300px;
         vertical-align: top;
         .ticket {
             width: 100%;

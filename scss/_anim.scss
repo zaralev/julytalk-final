@@ -2,16 +2,17 @@
     animation: wiggle linear 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    transform-origin: 50% 0%; /*--  x%, y% ; --*/
+    transform-origin: 50% 0;
+    /*--  x%, y% ; --*/
     -webkit-animation: wiggle linear 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    -webkit-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0;
 }
 @keyframes wiggle {
     0% {
-        left: 0px;
-        top: 0px;
+        left: 0;
+        top: 0;
         opacity: 1;
         transform: rotate(0deg) scaleX(1) scaleY(1);
     }
@@ -22,37 +23,35 @@
         transform: rotate(deg);
     }
 }
-
 @-webkit-keyframes wiggle {
-  0% {
-      left: 0px;
-      top: 0px;
-      opacity: 1;
-      transform: rotate(0deg) scaleX(1) scaleY(1);
-  }
-  50% {
-      transform: rotate(-10deg);
-  }
-  100% {
-      transform: rotate(deg);
-  }
+    0% {
+        left: 0;
+        top: 0;
+        opacity: 1;
+        transform: rotate(0deg) scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(deg);
+    }
 }
-
-
 .wiggle2 {
     animation: wiggle2 linear 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    transform-origin: 50% 0%; /*--  x%, y% ; --*/
+    transform-origin: 50% 0;
+    /*--  x%, y% ; --*/
     -webkit-animation: wiggle2 linear 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    -webkit-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0;
 }
 @keyframes wiggle2 {
     0% {
-        left: 0px;
-        top: 0px;
+        left: 0;
+        top: 0;
         opacity: 1;
         transform: rotate(-7deg) scaleX(1) scaleY(1);
     }
@@ -63,72 +62,83 @@
         transform: rotate(-7deg);
     }
 }
-
 @-webkit-keyframes wiggle2 {
-  0% {
-      left: 0px;
-      top: 0px;
-      opacity: 1;
-      transform: rotate(-7deg) scaleX(1) scaleY(1);
-  }
-  50% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(-7deg);
-  }
-}
-
-.button-wiggle {
-    animation: button-wiggle linear 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transform-origin: 50% 0%; /*--  x%, y% ; --*/
-    -webkit-animation: button-wiggle linear 2s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-transform-origin: 50% 0%;
-}
-
-
-@keyframes button-wiggle {
     0% {
-        left: 0px;
-        top: 0px;
+        left: 0;
+        top: 0;
         opacity: 1;
-        transform: rotate(0deg) scaleX(1) scaleY(1);
-    }
-    25% {
-        transform: rotate(10deg);
+        transform: rotate(-7deg) scaleX(1) scaleY(1);
     }
     50% {
         transform: rotate(0deg);
     }
-    75% {
-        transform: rotate(-10deg);
-    }
     100% {
-      transform: rotate(0deg);
+        transform: rotate(-7deg);
     }
 }
-
-@-webkit-keyframes button-wiggle {
-  0% {
-      left: 0px;
-      top: 0px;
-      opacity: 1;
-      transform: rotate(0deg) scaleX(1) scaleY(1);
-  }
-  25% {
-      transform: rotate(10deg);
-  }
-  50% {
-      transform: rotate(0deg);
-  }
-  75% {
-      transform: rotate(-10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+.button-wiggle {
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    &:focus {
+      border: none;
+      outline: 0;
+    }
+    &:active,
+    &:hover {
+        -webkit-transform: scale(1.1) rotate(4deg);
+        transform: scale(1.1) rotate(4deg);
+    }
 }
+// .button-wiggle {
+//     animation: button-wiggle linear 2s;
+//     animation-iteration-count: infinite;
+//     animation-direction: alternate;
+//     transform-origin: 50% 0%; /*--  x%, y% ; --*/
+//     -webkit-animation: button-wiggle linear 2s;
+//     -webkit-animation-iteration-count: infinite;
+//     -webkit-animation-direction: alternate;
+//     -webkit-transform-origin: 50% 0%;
+// }
+//
+//
+// @keyframes button-wiggle {
+//     0% {
+//         left: 0px;
+//         top: 0px;
+//         opacity: 1;
+//         transform: rotate(0deg) scaleX(1) scaleY(1);
+//     }
+//     25% {
+//         transform: rotate(10deg);
+//     }
+//     50% {
+//         transform: rotate(0deg);
+//     }
+//     75% {
+//         transform: rotate(-10deg);
+//     }
+//     100% {
+//       transform: rotate(0deg);
+//     }
+// }
+//
+// @-webkit-keyframes button-wiggle {
+//   0% {
+//       left: 0px;
+//       top: 0px;
+//       opacity: 1;
+//       transform: rotate(0deg) scaleX(1) scaleY(1);
+//   }
+//   25% {
+//       transform: rotate(10deg);
+//   }
+//   50% {
+//       transform: rotate(0deg);
+//   }
+//   75% {
+//       transform: rotate(-10deg);
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }

@@ -34,19 +34,19 @@ $(document).ready(function() {
         $(".webster-hall").css('text-decoration', 'none');
     });
 
-    // WEBSITE AND TWITTER HOVER
-    $('.website').mouseover(function() {
-        $(this).addClass("button-wiggle");
-    });
-    $('.website').mouseout(function() {
-        $(this).removeClass("button-wiggle");
-    });
-
-    $('.twitter').mouseover(function() {
-        $(this).addClass("button-wiggle");
-    });
-    $('.twitter').mouseout(function() {
-        $(this).removeClass("button-wiggle");
-    });
+    // // WEBSITE AND TWITTER HOVER
+    // $('.website').mouseover(function() {
+    //     $(this).addClass("button-wiggle");
+    // });
+    // $('.website').mouseout(function() {
+    //     $(this).removeClass("button-wiggle");
+    // });
+    //
+    // $('.twitter').mouseover(function() {
+    //     $(this).addClass("button-wiggle");
+    // });
+    // $('.twitter').mouseout(function() {
+    //     $(this).removeClass("button-wiggle");
+    // });
 
 });

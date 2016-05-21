@@ -1,0 +1,163 @@
+// DESKTOP
+#desktop {
+    display: none;
+    @media screen and (min-width:1024px) {
+        display: block;
+    }
+    .header {
+        // position: fixed;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background-color: #fff;
+        text-align: left;
+        img {
+            margin: 1em 1em -0.8em 2em;
+            max-width: 280px;
+        }
+    }
+    .band {
+        position: relative;
+        top: 74px;
+        img {
+            max-width: 100%;
+        }
+    }
+    .location {
+        // position: fixed;
+        position: absolute;
+        z-index: 3;
+        top: 1em;
+        right: 2em;
+        padding: 0;
+        margin: 0;
+        .row {
+            // background-color: #efa;
+            width: 24em;
+            div {
+                display: inline-block;
+                &.date {
+                    font-family: $heading;
+                    font-size: 1.5em;
+                    text-align: left;
+                }
+                &.place {
+                    padding: 0.7em 1em 0.3em;
+                    vertical-align: top;
+                    text-align: right;
+                    width: 70%;
+                    font-size: 1.3em;
+                    // background-color: #caa;
+                    a,
+                    a:active,
+                    a:visited {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                    a:hover {
+                        color: #f00;
+                        text-decoration: underline;
+                    }
+                }
+                &.locator {
+                    width: 2em;
+                    height: 2em;
+                    margin-top: 0.5em;
+                    position: absolute;
+                    img {
+                        max-width: 60%;
+                    }
+                }
+            }
+        }
+    }
+    .sound {
+        margin-top: 80px;
+        .mic {
+            width: 9%;
+            display: inline-table;
+            vertical-align: baseline;
+            img {
+                max-width: 100%;
+                cursor: pointer;
+                margin-top:0em;
+            }
+        }
+        .guitar {
+            width: 12%;
+            display: inline-table;
+            margin-left: 3em;
+                    vertical-align: top;
+            img {
+                max-width: 100%;
+                cursor: pointer;
+                margin-top:1em;
+                // margin-bottom: 0px;
+                // -webkit-transform: rotate(-7deg);
+                // transform: rotate(-7deg);
+            }
+        }
+    }
+    .column {
+        padding-top: 120px;
+        display: inline-table;
+        width: 75%;
+        position:absolute;
+        right:1em;
+        vertical-align: top;
+        .ticket {
+            width: 40%;
+            display: inline-table;
+            vertical-align: top;
+              margin-top:-120px;
+        }
+        .links {
+            text-align: center;
+            display: inline-table;
+            width: 50%;
+            vertical-align: top;
+            margin-top:-60px;
+            div {
+                padding: 0.2em;
+            }
+            .website {
+                display: inline-table;
+                vertical-align: middle;
+                img {
+                    cursor: pointer;
+                    height: 48px;
+                    padding: 0;
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        // box-shadow: 0 0 10px 3px #880000;
+                        border: none;
+                        border-color: transparent;
+                    }
+                }
+            }
+            .twitter {
+                display: inline-table;
+                vertical-align: middle;
+                img {
+                    cursor: pointer;
+                    width: 48px;
+                    height: 48px;
+                    padding: 0;
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        // box-shadow: 0 0 10px 3px #006a91;
+                        border: none;
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

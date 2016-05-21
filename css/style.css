@@ -646,17 +646,17 @@ table {
   animation: wiggle linear 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  transform-origin: 50% 0%;
+  transform-origin: 50% 0;
   /*--  x%, y% ; --*/
   -webkit-animation: wiggle linear 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-  -webkit-transform-origin: 50% 0%; }
+  -webkit-transform-origin: 50% 0; }
 
 @keyframes wiggle {
   0% {
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     opacity: 1;
     transform: rotate(0deg) scaleX(1) scaleY(1); }
   50% {
@@ -665,8 +665,8 @@ table {
     transform: rotate(deg); } }
 @-webkit-keyframes wiggle {
   0% {
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     opacity: 1;
     transform: rotate(0deg) scaleX(1) scaleY(1); }
   50% {
@@ -677,17 +677,17 @@ table {
   animation: wiggle2 linear 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  transform-origin: 50% 0%;
+  transform-origin: 50% 0;
   /*--  x%, y% ; --*/
   -webkit-animation: wiggle2 linear 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-  -webkit-transform-origin: 50% 0%; }
+  -webkit-transform-origin: 50% 0; }
 
 @keyframes wiggle2 {
   0% {
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     opacity: 1;
     transform: rotate(-7deg) scaleX(1) scaleY(1); }
   50% {
@@ -696,8 +696,8 @@ table {
     transform: rotate(-7deg); } }
 @-webkit-keyframes wiggle2 {
   0% {
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     opacity: 1;
     transform: rotate(-7deg) scaleX(1) scaleY(1); }
   50% {
@@ -705,46 +705,18 @@ table {
   100% {
     transform: rotate(-7deg); } }
 .button-wiggle {
-  animation: button-wiggle linear 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transform-origin: 50% 0%;
-  /*--  x%, y% ; --*/
-  -webkit-animation: button-wiggle linear 2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -webkit-transform-origin: 50% 0%; }
+  cursor: pointer;
+  transition: 0.3s ease-out; }
+  .button-wiggle:focus {
+    border: none;
+    outline: 0; }
+  .button-wiggle:active, .button-wiggle:hover {
+    -webkit-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg); }
 
-@keyframes button-wiggle {
-  0% {
-    left: 0px;
-    top: 0px;
-    opacity: 1;
-    transform: rotate(0deg) scaleX(1) scaleY(1); }
-  25% {
-    transform: rotate(10deg); }
-  50% {
-    transform: rotate(0deg); }
-  75% {
-    transform: rotate(-10deg); }
-  100% {
-    transform: rotate(0deg); } }
-@-webkit-keyframes button-wiggle {
-  0% {
-    left: 0px;
-    top: 0px;
-    opacity: 1;
-    transform: rotate(0deg) scaleX(1) scaleY(1); }
-  25% {
-    transform: rotate(10deg); }
-  50% {
-    transform: rotate(0deg); }
-  75% {
-    transform: rotate(-10deg); }
-  100% {
-    transform: rotate(0deg); } }
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Avenir Book";
@@ -1524,7 +1496,7 @@ table {
 
 #tablet {
   display: none; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     #tablet {
       display: block; } }
   #tablet .header {
@@ -1604,9 +1576,9 @@ table {
         -webkit-transform: rotate(-7deg);
         transform: rotate(-7deg); }
   #tablet .column {
-    padding-top: 120px;
+    padding-top: 8em;
     display: inline-table;
-    width: 40%;
+    width: 300px;
     vertical-align: top; }
     #tablet .column .ticket {
       width: 100%; }
@@ -1635,6 +1607,127 @@ table {
           height: 48px;
           padding: 0; }
           #tablet .column .links .twitter img:active, #tablet .column .links .twitter img:focus, #tablet .column .links .twitter img:hover {
+            border: none;
+            border-color: transparent; }
+
+#desktop {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    #desktop {
+      display: block; } }
+  #desktop .header {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: left; }
+    #desktop .header img {
+      margin: 1em 1em -0.8em 2em;
+      max-width: 280px; }
+  #desktop .band {
+    position: relative;
+    top: 74px; }
+    #desktop .band img {
+      max-width: 100%; }
+  #desktop .location {
+    position: absolute;
+    z-index: 3;
+    top: 1em;
+    right: 2em;
+    padding: 0;
+    margin: 0; }
+    #desktop .location .row {
+      width: 24em; }
+      #desktop .location .row div {
+        display: inline-block; }
+        #desktop .location .row div.date {
+          font-family: "Code Bold";
+          font-size: 1.5em;
+          text-align: left; }
+        #desktop .location .row div.place {
+          padding: 0.7em 1em 0.3em;
+          vertical-align: top;
+          text-align: right;
+          width: 70%;
+          font-size: 1.3em; }
+          #desktop .location .row div.place a,
+          #desktop .location .row div.place a:active,
+          #desktop .location .row div.place a:visited {
+            text-decoration: none;
+            color: #000; }
+          #desktop .location .row div.place a:hover {
+            color: #f00;
+            text-decoration: underline; }
+        #desktop .location .row div.locator {
+          width: 2em;
+          height: 2em;
+          margin-top: 0.5em;
+          position: absolute; }
+          #desktop .location .row div.locator img {
+            max-width: 60%; }
+  #desktop .sound {
+    margin-top: 80px; }
+    #desktop .sound .mic {
+      width: 9%;
+      display: inline-table;
+      vertical-align: baseline; }
+      #desktop .sound .mic img {
+        max-width: 100%;
+        cursor: pointer;
+        margin-top: 0em; }
+    #desktop .sound .guitar {
+      width: 12%;
+      display: inline-table;
+      margin-left: 3em;
+      vertical-align: top; }
+      #desktop .sound .guitar img {
+        max-width: 100%;
+        cursor: pointer;
+        margin-top: 1em; }
+  #desktop .column {
+    padding-top: 120px;
+    display: inline-table;
+    width: 75%;
+    position: absolute;
+    right: 1em;
+    vertical-align: top; }
+    #desktop .column .ticket {
+      width: 40%;
+      display: inline-table;
+      vertical-align: top;
+      margin-top: -120px; }
+    #desktop .column .links {
+      text-align: center;
+      display: inline-table;
+      width: 50%;
+      vertical-align: top;
+      margin-top: -60px; }
+      #desktop .column .links div {
+        padding: 0.2em; }
+      #desktop .column .links .website {
+        display: inline-table;
+        vertical-align: middle; }
+        #desktop .column .links .website img {
+          cursor: pointer;
+          height: 48px;
+          padding: 0; }
+          #desktop .column .links .website img:active, #desktop .column .links .website img:focus, #desktop .column .links .website img:hover {
+            border: none;
+            border-color: transparent; }
+      #desktop .column .links .twitter {
+        display: inline-table;
+        vertical-align: middle; }
+        #desktop .column .links .twitter img {
+          cursor: pointer;
+          width: 48px;
+          height: 48px;
+          padding: 0; }
+          #desktop .column .links .twitter img:active, #desktop .column .links .twitter img:focus, #desktop .column .links .twitter img:hover {
             border: none;
             border-color: transparent; }
 
