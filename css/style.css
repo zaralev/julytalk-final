@@ -1449,7 +1449,7 @@ table {
   #mobile .guitar img {
     max-width: 100%;
     cursor: pointer;
-    margin-bottom: 50px; }
+    margin-bottom: 100px; }
 #mobile .toggle {
   position: absolute;
   margin-top: 2em;
@@ -1572,7 +1572,7 @@ table {
       #tablet .sound .guitar img {
         max-width: 100%;
         cursor: pointer;
-        margin-bottom: 15px;
+        margin-bottom: 90px;
         -webkit-transform: rotate(-7deg);
         transform: rotate(-7deg); }
   #tablet .column {
@@ -1706,7 +1706,7 @@ table {
       display: inline-table;
       width: 50%;
       vertical-align: top;
-      margin-top: -60px; }
+      margin-top: -100px; }
       #desktop .column .links div {
         padding: 0.2em; }
       #desktop .column .links .website {
